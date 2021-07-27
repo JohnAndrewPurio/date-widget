@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Widget</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-widget">
+        <button id="prev" onclick="next()">
+            <div class="bullet"></div>
+        </button>
+        <div class="dates">
+            <p>Jul 1</p>
+            <p>Jul 2</p>
+            <p>Jul 3</p>
+            <p class="selected">Jul 4</p>
+            <p>Jul 5</p>
+            <p>Jul 6</p>
+            <p>Jul 7</p>
+        </div>
+        <button id="next" onclick="prev()">
+            <div class="bullet"></div>
+        </button>
+    </div>
+
+    <template id="days">
+        <p>Days</p>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>
